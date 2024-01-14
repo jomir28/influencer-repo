@@ -59,13 +59,13 @@ nav a {
 
 
 /* main releted style */
-main{
+main {
     width: 1200px;
     margin: 0 auto;
 }
 
 .img-container {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-content: space-around;
     align-items: center;
@@ -74,33 +74,99 @@ main{
 
 
 /* popular section style */
-.popular-container{
+.popular-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.popular-ttl{
+.popular-ttl {
     text-align: center;
-    padding: 20px;px 0;
+    padding: 20px;
+    px 0;
 }
 
-.popular-desc{
+.popular-desc {
     padding-right: 30px;
 }
+
+.btn-type {
+    padding-right: 90px;
+    text-align: right;
+    color: #E02C6D;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+/* features releted style */
+.features {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features-img-container img{
+    width: 70%;
+    border-radius: 20px;
+}
+
+.features-img-container {
+    width: 50%;
+}
+
+.features-container {
+    width: 50%;
+}
+.features-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* footer releted style */
+.footer{
+margin: 70px 0;
+    background-color: antiquewhite;
+    text-align: center;
+}
+.footer img{
+    width: 40px;
+}
+
+.footer-img{
+    margin-top: 25px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer, h3, h5{
+    padding: 5px;
+}
+
+
 
 @media screen and (max-width:576px) {
 
     .nav-contant,
-    .banner, {
+    .banner {
         flex-direction: column;
     }
 
-    .img-container{
+    .img-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 50px;
     }
+
+    .popular-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
 
 }
 
